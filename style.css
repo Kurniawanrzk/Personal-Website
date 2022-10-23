@@ -1,0 +1,66 @@
+@keyframes aniWhenLoad {
+    from{
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes chaneFont {
+    10%{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    20%{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    30%{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    40%{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    }
+    50%{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+}
+.gif {
+    position: absolute;
+    right: 0;
+    width: 100px;
+    transform: rotate(-90deg);
+    transition: 200ms linear;
+}   
+
+body{
+    animation: aniWhenLoad 400ms;
+}
+
+.rizky {
+    cursor: pointer;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.rizky:hover {
+    animation: chaneFont 1000ms linear infinite;
+}
+
+.hero-desc {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.hero-desc .desc {
+    max-width: 50%;
+    color: gray;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
