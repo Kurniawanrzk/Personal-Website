@@ -107,3 +107,41 @@ a {
         margin-bottom: 10px;
     }
  }
+
+@media only screen and (min-width: 600px) {
+    .project {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .project {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+    .project {
+        display: grid;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .project {
+        display: grid;
+        margin-bottom: 10px;
+    }
+
+    .hero-section > div > img {
+        width: 200px;
+    }
+    
+}
