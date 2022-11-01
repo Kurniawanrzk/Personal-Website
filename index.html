@@ -16,7 +16,7 @@
     class="hero-section d-flex justify-content-center flex-column mt-5">
     <div class="d-flex justify-content-center">
                 <img 
-                class="border rounded-circle"
+                class="border rounded-circle shadow"
                 src="https://avatars.githubusercontent.com/u/92316345?s=400&u=2f76d343e40f9fefcd930e4d3fabdc120d150904&v=4" 
                 alt="Image Profile"
                 width="200"
@@ -81,9 +81,9 @@
       import { Octokit, App } from "https://cdn.skypack.dev/octokit";
       const octokit = new Octokit();
       const req = await octokit.request("GET https://api.github.com/users/kurniawanrzk/repos ")
+
       req.data.forEach(el => {
-          console.log(el)
-          document.querySelector(".project")
+          el.language !== null || el.description !== null ? document.querySelector(".project")
           .innerHTML += `
           <a href='${el.clone_url}'>
             <div class='project-box'>
@@ -92,7 +92,7 @@
               <p>${el.language}</p>
             </div>
           </a>
-          `
+          ` : ""
       });
       </script>
       
